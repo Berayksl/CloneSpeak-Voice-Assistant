@@ -1,0 +1,10 @@
+faster-whisper==1.2.1
+silero-vad==6.2.1
+chatterbox-tts==0.1.7
+sounddevice==0.5.5
+soundfile==0.13.1
+pydub==0.25.1
+PyQt5==5.15.11
+huggingface_hub==1.8.0
+numpy==1.26.4
+requests==2.33.1

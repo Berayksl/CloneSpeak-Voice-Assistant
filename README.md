@@ -57,7 +57,7 @@ conda activate voice-assistant
 ### 3. Install PyTorch with CUDA
 
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
 
 ### 4. Install llama-cpp-python with CUDA support
@@ -130,7 +130,7 @@ Once you confirm, the GUI closes and the assistant starts listening immediately.
 
 ---
 
-## 🧪 Testing Individual Modules
+<!-- ## 🧪 Testing Individual Modules
 
 ```bash
 # Test ASR alone (benchmarks small vs. medium on test audio files)
@@ -141,7 +141,7 @@ python llm_test.py
 
 # Test TTS + voice cloning
 python tts_test.py
-```
+``` -->
 
 <!-- ## 🔧 Configuration
 
