@@ -34,45 +34,6 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 
 ---
 
-## ⚡ Performance (NVIDIA GPU, 8 GB VRAM)
-
-| Module | Latency |
-|---|---|
-| ASR (Whisper Medium) | ~0.5s |
-| LLM first token | ~1.2s |
-| TTS first sentence | ~2.1s |
-| **Time to first speech** | **~3.8s** |
-
-> Streaming pipeline cuts perceived latency by ~80% vs. the naive sequential approach (24s → ~4s to first audio).
-
----
-
-## 📦 Repository Structure
-
-```
-voice-assistant/
-├── pipeline.py              # Main streaming pipeline (Section 2)
-├── asr_test.py              # Standalone ASR benchmarking (Section 1.1)
-├── llm_test.py              # Standalone LLM benchmarking (Section 1.2)
-├── tts_test.py              # Standalone TTS + voice cloning test (Section 1.3)
-├── requirements.txt         # Python dependencies
-├── models/                  # Place downloaded model files here
-│   └── Llama-3.2-3B-Instruct-Q4_K_M.gguf
-├── clone_audio/             # Reference audio for voice cloning
-│   └── your_voice_sample.wav   # 5–30 sec clean speech clip
-├── test_audio/              # Sample audio files for ASR testing
-│   ├── clean_speech.wav
-│   ├── sports_commentary.wav
-│   └── trailer_with_noise.wav
-├── demo/                    # Demo outputs (add your own!)
-│   ├── demo_response.mp3    # Sample TTS output
-│   └── screenshot.png       # Pipeline running screenshot
-└── report/
-    └── report.pdf           # Technical report
-```
-
----
-
 ## 🛠️ Installation
 
 ### Prerequisites
@@ -155,10 +116,8 @@ Downloaded automatically from Hugging Face on first run (`ResembleAI/chatterbox-
 
 ## 🚀 Running the Voice Assistant
 
-### Full pipeline (voice Q&A)
-
 ```bash
-python pipeline.py
+python VoiceChatBot.py
 ```
 
 - Speak after the `🎙️ Listening...` prompt appears
@@ -187,20 +146,6 @@ python llm_test.py
 # Test TTS + voice cloning
 python tts_test.py
 ```
-
----
-
-## 🎬 Demo
-
-<!-- Add your own demo files to the demo/ folder and link them here -->
-
-| | |
-|---|---|
-| ![Pipeline screenshot](demo/screenshot.png) | Sample system output showing ASR → LLM → TTS timing breakdown |
-
-**Sample audio output:** [demo/demo_response.mp3](demo/demo_response.mp3)
-
----
 
 ## 🔧 Configuration
 
