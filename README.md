@@ -3,7 +3,7 @@
 A fully local, GPU-accelerated voice assistant pipeline built for low-latency, real-time interaction. Ask questions out loud and get spoken answers back, in a cloned voice!
 ---
 
-## ✨ Features
+## Features
 
 - 🎤 **Automatic speech detection** via Silero VAD (no push-to-talk)
 - 🧠 **State-of-the-art ASR** with faster-whisper (Whisper Medium, GPU-accelerated)
@@ -14,7 +14,7 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────┐    ┌──────────────────┐    ┌─────────────────────┐    ┌────────────────────┐
@@ -31,7 +31,7 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ conda install ffmpeg -c conda-forge
 
 --- -->
 
-## 📥 Downloading Models
+## Downloading Models
 
 ### LLM — Llama 3.2 3B (Q4_K_M)
 
@@ -111,7 +111,7 @@ Downloaded automatically from Hugging Face on first run (`ResembleAI/chatterbox-
 
 ---
 
-## 🚀 Running the Voice Assistant
+## Running the Voice Assistant
 
 ```bash
 python VoiceChatBot.py
@@ -170,7 +170,7 @@ All key parameters are at the top of `pipeline.py`:
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [OpenAI Whisper](https://github.com/openai/whisper)
 - [SYSTRAN faster-whisper](https://github.com/SYSTRAN/faster-whisper)
