@@ -31,7 +31,7 @@ SILENCE_LIMIT   = 20
 PRE_BUFFER_SIZE = FRAME_SIZE * 20
 
 # LLM
-LLM_MODEL_PATH  = "./llama model/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+LLM_MODEL_PATH  = "./models/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
 LLM_GPU_LAYERS  = -1
 LLM_CONTEXT     = 4096
 LLM_MAX_TOKENS  = 256

@@ -46,7 +46,7 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/voice-assistant.git
+git clone https://github.com/Berayksl/AI-Voice-Assistant.git
 cd voice-assistant
 ```
 
